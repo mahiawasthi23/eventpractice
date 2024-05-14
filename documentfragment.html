@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <ul id="skills"></ul> -->
+    <ul id="language">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVAScript</li>
+    </ul>
+
+    <script>
+        // let fragment = new DocumentFragment();
+        // let skills = ['HTML','CSS','JAVAScript','C'];
+        // let skill = document.querySelector('#skills');
+        // skills.forEach((language) =>{
+        //     let li = document.createElement('li');
+        //     li.innerHTML = language;
+        //     fragment.appendChild(li);
+        // });
+        // skill.appendChild(fragment);
+
+
+        // let langelement = document.querySelector("#language");
+        // let addlanguages = ['Python','Java','C++','C'];
+        // const items = addlanguages.map((language) =>{
+        //     const li = document.createElement('li');
+        //     li.innerHTML = language;
+        //     return li;
+        // })
+
+        // langelement.lastChild.after(...items);
+
+
+        //cloneNode() method
+        //syntax = let cloneNode = originalNode.cloneNode(deep);
+
+        // let lange = document.querySelector('ul');
+        // let clonelang = lange.cloneNode(true);
+        // document.body.appendChild(clonelang);
+
+        // let lange = document.querySelector('ul');
+        // let clonelang = lange.cloneNode(false);
+        // document.body.appendChild(clonelang);
+
+        //removeChild() method
+        //syntax= let childNode = parentNoode.removeChild(childNode.)
+
+        // let lange = document.querySelector('ul');
+        // lange.removeChild(lange.lastElementChild);
+
+        //remove all the element
+        // let lange = document.querySelector('#language');
+        // lange.innerHTML = "";
+
+        //remove all the element second method
+        //if you want then use instead of firstchild lastChild both work are equal
+        // let lange = document.querySelector('#language');
+        // while(lange.firstChild){
+        //     lange.removeChild(lange.firstChild);
+        // }
+
+
+        //insertbefore() method
+        // let lange = document.querySelector('#language');
+        // let newlang = document.createElement('li');
+        // newlang.innerHTML = 'C';
+        // lange.insertBefore(newlang, lange.firstElementChild);
+
+
+        // when we shoulde 
+        // let lange = document.querySelector('#language');
+        // let newlang = document.createElement('li');
+        // newlang.innerHTML = 'C';
+        // lange.insertBefore(newlang, lange.children[1]);
+    </script>
+</body>
+</html>
