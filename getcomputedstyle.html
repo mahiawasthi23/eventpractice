@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>get computed style</title>
+    <style>
+        .get {
+            color: red;
+            font-size: 20px;
+            padding: 20px;
+            border: 1px solid black;
+        }
+        .get::first-letter{
+            color: red;
+            font-size: 30px;
+        }
+        .box{
+            width: 100px;
+            height: 150px;
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="box"></div> -->
+    <!-- <p class="get">Hello guys my name is mahima</p> -->
+    <!-- <a href="https://www.google.com" id="Link">Google</a> -->
+    <!-- <input type="text" id="input"> -->
+
+    <ul id="list">
+        <li><a id="home">Home</a></li>
+        <li><a id="about">About</a></li>
+        <li><a id="services">Srvices</a></li>
+    </ul>
+
+    <script>
+        // let getting = document.querySelector('.get');
+        // let style = getComputedStyle(getting);
+        // console.log(style.color);
+
+        // let style = getComputedStyle(getting, '::first-letter');
+        // console.log(style.color,style.fontSize);
+
+        // getting.className += 'new-class';
+        // console.log(geting.className);
+
+        // getting.classList.add("new-class");
+        // console.log(geting.className);
+
+        // getting.classList.add("new-class", "new-class2", "new-class3");
+        // console.log(getting.className);
+
+        // getting.classList.remove("new-class2");
+        // console.log(getting.className);
+
+        // getting.classList.replace("new-class3","new-class4");
+        // console.log(getting.className);
+
+        // let checkClassName = getting.classList.contains("new-class4");
+        // console.log(checkClassName);
+
+
+        // getting.classList.toggle("new-class2");
+        // console.log(getting.className);
+
+        // let box = document.querySelector('.box');
+        // let width = box.offsetWidth;
+        // let height = box.offsetHeight;
+        // console.log(width,height);
+
+        // let width = box.clientWidth;
+        // let height = box.clientHeight;
+        // cnosole.log(width,height);
+
+
+        //preventDefault() method
+
+        // let link = document.querySelector('#Link');
+        // link.addEventListener('click', function(e){
+        //     console.log('Link clicked');
+        //     e.preventDefault();
+        // });
+
+        //keydown, keyup, keypress events
+        //  let input = document.querySelector('#input');
+        //  input.addEventListener('keydown',function(e){
+        //     console.log(e.key,e.code);
+        //  });
+
+        // input.addEventListener('keyup',function(e){
+        //     console.log(e.key,e.code);
+        //  });
+
+        // input.addEventListener('keypress',function(e){
+        //     console.log(e.key,e.code);
+        //  });
+
+        //focuse and blur events
+
+        // let input = document.querySelector('#input');
+
+        // input.addEventListener('focus', function(e){
+        //     // console.log('Input focused');
+        //     e.target.style.background='yellow';
+        // })
+
+        // input.addEventListener('blur', function(e){
+        //     // console.log('Input blurred');
+        //     e.target.style.background=" ";
+        // });
+
+
+        //event delegation
+
+        // let home = document.querySelector('#home');
+
+        // home.addEventListener('click',function(e){
+        //     console.log('Home clicked');
+        // });
+
+        // let about = document.querySelector('#about');
+
+        // about.addEventListener('click',function(e){
+        //     console.log('Home about');
+        // });
+
+
+        // let services = document.querySelector('#services');
+
+        // services.addEventListener('click',function(e){
+        //     console.log('Home services');
+        // });
+
+
+        let list = document.querySelector("#list");
+        list.addEventListener('click',function(e){
+            let target = e.target;
+            if(target.id ==='home'){
+                console.log("Home clicked");
+            }else if(target.id ==='about'){
+                console.log("About clicked");
+            }else if(target.id === 'services'){
+                console.log('Services clicked');
+            }
+        });
+    </script>
+</body>
+</html>
