@@ -1,0 +1,143 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opacity Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .transparent-box {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            opacity: 0.5; /* Adjust opacity here (0.0 to 1.0) */
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 20px;
+        }
+
+        .full-opacity-box {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            opacity: 0.5; /* Fully opaque */
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="transparent-box">50% Opacity</div>
+    <div class="full-opacity-box">100% Opacity</div>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector Examples</title>
+    <style>
+        /* 1. Select all div and p elements */
+        div,
+        p {
+            color: blue;
+            /* Changes text color to blue */
+        }
+
+        /* 2. Select all p elements that are descendants of div elements */
+        div p {
+            font-weight: bold;
+            /* Makes the text inside the div bold */
+        }
+
+        /* 3. Select all p elements that are siblings of a div and come after it */
+        div~p {
+            background-color: yellow;
+            /* Highlights paragraphs after a div */
+        }
+
+        /* 4. Select the first p element that is immediately following a div */
+        div+p {
+            font-style: italic;
+            /* Italicizes the first p that follows a div */
+        }
+
+        /* 5. Select p elements that are direct children of div elements */
+        div>p {
+            border: 1px solid black;
+            /* Adds a border around paragraphs inside div */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p>Paragraph 1 inside a div.</p>
+        <span>
+            <p>hi</p>
+        </span>
+    </div>
+    <p>Paragraph 2 after a div.</p>
+    <div class="container">
+        <p>Paragraph 3 inside another div.</p>
+    </div>
+    <p>Paragraph 4 after another div.</p>
+</body>
+
+</html> -->
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide Element Example</title>
+    <style>
+    .box {
+        padding: 10px;
+        margin: 10px;
+        background-color: lightblue;
+        border: 1px solid #007BFF;
+    }
+    
+    #displayNone {
+        display: none; /* This element is completely removed from the document flow */
+    }
+    
+    .hidden {
+        visibility: hidden; /* This element is hidden but still takes up space */
+    }
+</style>
+    
+</head>
+<body>
+    <div class="box" id="displayNone">I will be hidden with display: none;</div>
+    <div class="box hidden">I will be hidden with visibility: hidden;</div>
+    <div class="box">I am visible!</div>
+</body>
+</html> -->

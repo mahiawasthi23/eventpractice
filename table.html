@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<style>
+   
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9ecef;
+    margin: 0;
+    padding: 20px;
+}
+
+.contenir {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    transition: transform 0.2s;
+}
+
+.contenir:hover {
+    transform: scale(1.02);
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #343a40;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+main {
+    line-height: 1.6;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 15px 0;
+    color: #495057;
+    padding: 10px;
+    border-left: 4px solid #007bff;
+    background-color: #f8f9fa;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 30px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+    p {
+        font-size: 1em;
+    }
+}
+
+</style>
+
+<body>
+    <div class="contenir">
+        <marquee>
+        <nav>
+            <h1>About the Councils of NavGurukul</h1>
+        </nav>
+    </marquee>
+        <main>
+            <p>Who are the councils? 🤔</p>
+            <p>What is their responsibility? 📋</p>
+            <p>How many councils are there in NavGurukul? 🔢</p>
+            <p>Let’s talk about it. 🗣️</p>
+
+            <img src="./images/meeting.png">
+        </main>
+    </div>
+</body>
+
+</html>

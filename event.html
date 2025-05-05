@@ -44,98 +44,98 @@
 
     <script>
         const grandparent = document.querySelector('.grandparent');
-        // const parent = document.querySelector('.parent');
-        // const child = document.querySelector('.child');
+        const parent = document.querySelector('.parent');
+         const child = document.querySelector('.child');
 //Event Bubbling
-        // grandparent.addEventListener("click", ()=>{
-        //     console.log('grandparent is third');
-        // });
+         grandparent.addEventListener("click", ()=>{
+            console.log('grandparent is third');
+        });
 
-        // parent.addEventListener("click", (e)=>{
-        //     console.log('parent is second');
-        // });
+        parent.addEventListener("click", (e)=>{
+            console.log('parent is second');
+        });
 
-        // child.addEventListener("click", ()=>{
-        //     console.log('child is first');
-        // });
+        child.addEventListener("click", ()=>{
+            console.log('child is first');
+         });
 
 
 //Event capturing or trickling
-        // grandparent.addEventListener("click", ()=>{
-        //     console.log('grandparent is first');
-        // },{capture: true});
+        grandparent.addEventListener("click", ()=>{
+            console.log('grandparent is first');
+        },{capture: true});
 
-        // parent.addEventListener("click", (e)=>{
-        //     console.log('parent is second');
-        // },{capture: true});
+        parent.addEventListener("click", (e)=>{
+            console.log('parent is second');
+        },{capture: true});
 
-        // child.addEventListener("click", ()=>{
-        //     console.log('child is third');
-        // },{capture: true});
+        child.addEventListener("click", ()=>{
+            console.log('child is third');
+        },{capture: true});
 
 //useing for alert event bubbling
-        // grandparent.addEventListener("click", ()=>{
-        //     alert('grandparent third')
-        // });
+        grandparent.addEventListener("click", ()=>{
+            alert('grandparent third')
+        });
 
-        // parent.addEventListener("click", (e)=>{
-        //     alert('parent is second');
-        // });
+        parent.addEventListener("click", (e)=>{
+            alert('parent is second');
+        });
 
-        // child.addEventListener("click", ()=>{
-        //     alert('child is first');
-        // });
+        child.addEventListener("click", ()=>{
+            alert('child is first');
+        });
 
 
 //usseing for alert capturing or trickling
-        // grandparent.addEventListener("click", ()=>{
-        //     alert('grandparent first')
-        // },{capture: true});
+        grandparent.addEventListener("click", ()=>{
+            alert('grandparent first')
+        },{capture: true});
 
-        // parent.addEventListener("click", (e)=>{
-        //     alert('parent is second');
-        // },{capture:true});
+        parent.addEventListener("click", (e)=>{
+            alert('parent is second');
+        },{capture:true});
 
-        // child.addEventListener("click", ()=>{
-        //     alert('child is third');
-        // },{capture:true});
+        child.addEventListener("click", ()=>{
+            alert('child is third');
+        },{capture:true});
 
 //stoppropagation method
-        // grandparent.addEventListener("click", (e)=>{
-        //     console.log('grandparent is first');
-        // },{capture:true});
+        grandparent.addEventListener("click", (e)=>{
+            console.log('grandparent is first');
+        },{capture:true});
 
-        // parent.addEventListener("click", (e)=>{
-        //     e.stopPropagation();
-        //     console.log('parent is second');
-        // },{capture:true});
+        parent.addEventListener("click", (e)=>{
+            e.stopPropagation();
+            console.log('parent is second');
+        },{capture:true});
 
-        // child.addEventListener("click", (e)=>{
-        //     console.log('child is third');
-        // },{capture:true});
+        child.addEventListener("click", (e)=>{
+            console.log('child is third');
+        },{capture:true});
 
 //once method
-        // grandparent.addEventListener("click", ()=>{
-        //     console.log('grandparent is first');
-        // },{once: true});
+        grandparent.addEventListener("click", ()=>{
+            console.log('grandparent is first');
+        },{once: true});
 
-        // parent.addEventListener("click", ()=>{
-        //     console.log('parent is second');
-        // },{once: true});
+        parent.addEventListener("click", ()=>{
+            console.log('parent is second');
+        },{once: true});
 
-        // child.addEventListener("click", ()=>{
-        //     console.log('child is third');
-        // },{once:true});
+        child.addEventListener("click", ()=>{
+            console.log('child is third');
+        },{once:true});
 
 
-        // function GrandParent(){
-            // console.log('grandParent bubbling with time');
-        // }
-        // grandparent.addEventListener("click",GrandParent);
+        function GrandParent(){
+            console.log('grandParent bubbling with time');
+        }
+        grandparent.addEventListener("click",GrandParent);
         
-       // setTimeout(() => {
-            // grandparent.removeEventListener("click",GrandParent);
-       // },0.001)
+       setTimeout(() => {
+            grandparent.removeEventListener("click",GrandParent);
+       },0.001)
 
 //mousover:-
 
